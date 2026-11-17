@@ -1,34 +1,43 @@
-# Weather Application Testing Using Python and Playwright
+# Automated Weather Application Testing Using Python and Playwright
 
-## Project Description
-This project focuses on automated web application testing using Python and the Playwright framework. DuckDuckGo is used as the web application under test. The project automates searching for weather information (for example, "weather Paris") and verifies the search results.
+## Project Overview
+This project focuses on automated testing of weather search functionality using Python and the Playwright automation framework. DuckDuckGo is used to search for weather information about a selected city automatically.
+
+The program searches for a city, verifies the city name in the search results, extracts the displayed temperature, and checks whether the temperature information is available.
 
 ## Objectives
-- To understand web application testing.
-- To automate browser interactions using Playwright.
-- To test DuckDuckGo search functionality.
-- To verify weather search results.
-- To execute valid and invalid test cases.
+- To understand automated web application testing.
+- To automate browser operations using Playwright.
+- To search for weather information automatically.
+- To verify city search results.
+- To extract and validate temperature information.
 
 ## Technologies Used
 - Python
 - Playwright
-- DuckDuckGo (Website Under Test)
+- DuckDuckGo
 - PyCharm
-- Web Browser
+- Chromium Browser
 
-## Testing Process
-1. Launch the web browser using Playwright.
+## Project Workflow
+1. Launch the Chromium browser automatically.
 2. Open the DuckDuckGo website.
-3. Search for "weather Paris".
-4. Retrieve and verify the search results.
-5. Check whether the expected weather information is displayed.
+3. Enter the selected city name automatically.
+4. Search for weather information.
+5. Read the webpage content.
+6. Verify whether the city name appears.
+7. Extract the temperature using Python regular expressions.
+8. Display the test results as PASS or FAIL.
 
-## Test Cases
-1. Valid search – Search for weather in Paris.
-2. Invalid search – Enter an invalid search query.
-3. Empty search – Submit an empty search input.
-4. Result verification – Check whether relevant weather results are displayed.
+## Testing Performed
+- Automatic browser launching.
+- City name search validation.
+- Weather search result verification.
+- Temperature extraction.
+- Temperature availability verification.
+
+## Expected Outcome
+The program automatically searches for weather information and displays the city search status and extracted temperature.
 
 ## Conclusion
-This project demonstrates automated web application testing using Python and Playwright. It helps understand browser automation, functional testing, and validation of search results through DuckDuckGo.
+This project demonstrates how Python and Playwright can be used for browser automation and functional testing. It reduces manual testing effort and helps verify weather search results automatically.
